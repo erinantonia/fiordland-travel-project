@@ -2,8 +2,14 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .container {
   max-width: 1400px;
+  margin: 0 auto;
 }
 
 header {
@@ -55,7 +61,58 @@ header a {
   margin-top: 32px;
 }
 
-@media (max-width: 800px) {
+footer {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
+    url("../images/footer.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 0;
+}
+
+footer h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+footer ul {
+  padding: 0;
+  line-height: 1.5;
+}
+
+footer li {
+  color: white;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+footer a:visited {
+  color: white;
+}
+
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+  margin-right: 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.signature {
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 960px) {
   header h1 {
     font-size: 48px;
   }
