@@ -2,15 +2,81 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-section {
-  max-width: 1200px;
+.container {
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 100px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-3-columns-first-column-smaller {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 32px;
+}
+
+.btn {
+  display: block;
+  padding: 16px;
+  background: #206874;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.signature {
+  text-align: center;
+  margin-top: 30px;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px 50px;
+}
+
+section.secondary {
+  background: #f8f8f8;
+
+  padding: 100px 50px;
 }
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-    url("../images/fiordland.png");
+    url("../images/header.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -73,16 +139,25 @@ main h3 {
   margin: 0;
 }
 
+main h4 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+main h5 {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
 main p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   opacity: 0.7;
-}
-
-main .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 footer {
@@ -100,6 +175,13 @@ footer h2 {
   line-height: 1.5;
 }
 
+footer p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
 footer ul {
   padding: 0;
   line-height: 1.5;
@@ -115,36 +197,6 @@ footer li {
 
 footer a:visited {
   color: white;
-}
-
-footer p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  opacity: 0.7;
-}
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
-
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
-}
-
-.grid-3-columns {
-  grid-template-columns: 1fr 2fr 2fr;
-}
-
-.signature {
-  text-align: center;
-  margin-top: 30px;
 }
 
 @media (max-width: 960px) {
